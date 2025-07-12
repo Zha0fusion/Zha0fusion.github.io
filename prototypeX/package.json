@@ -8,7 +8,8 @@
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
-    "type-check": "vue-tsc --build"
+    "type-check": "vue-tsc --build",
+    "generate-pwa-assets": "pwa-assets-generator"
   },
   "dependencies": {
     "pinia": "^3.0.3",
@@ -18,6 +19,7 @@
   "devDependencies": {
     "@tsconfig/node22": "^22.0.2",
     "@types/node": "^22.15.32",
+    "@vite-pwa/assets-generator": "^1.0.0",
     "@vitejs/plugin-vue": "^6.0.0",
     "@vue/tsconfig": "^0.7.0",
     "npm-run-all2": "^8.0.4",
